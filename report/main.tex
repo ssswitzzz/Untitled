@@ -3,10 +3,15 @@
 \usepackage{ctex}
 \author{SwitZ \and Shichien \and Kylin-OIO}
 \title{Write Anything Here}
+
 \begin{document}
+
 \maketitle
+
 \section{Porter Robinson Discography}
+
 \subsection{Worlds(2014)}
+
 \begin{itemize}
     \item Divinity(feat. Amy Millan)
     \item Sad Machine
@@ -23,7 +28,9 @@
     \item Goodbye to a World
     \item Shepherdess/She Heals Everything(2021)
 \end{itemize}
+
 \subsection{Nurture(2021)}
+
 \begin{itemize}
     \item Lifelike
     \item Look at the Sky
@@ -41,7 +48,9 @@
     \item Trying to Feel Alive
     \item Fullmoon Lullaby(feat. Wednesday Campanella)
 \end{itemize}
+
 \subsection{SMILE!:D(2024)}
+
 \begin{itemize}
     \item Knock Yourself Out XD
     \item Cheerleader
@@ -55,29 +64,32 @@
     \item Everthing to Me
 \end{itemize}
 
-    \section{冲突示例}
+\section{冲突示例}
 
-    我是来捣蛋的。
+我是来捣蛋的。
 
-    \section{ Switz 的表格}
+\section{ Switz 的表格}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lcr}
+        \toprule
+        \textbf{Column 1}                  & \textbf{Column 2}              & \textbf{Column 3}                   \\
+        \midrule
+        \textit{Left-aligned text}         & \textit{Centered text}         & \textit{Right-aligned text}         \\
+        \texttt{Another left-aligned text} & \texttt{Another centered text} & \texttt{Another right-aligned text} \\
+        \bottomrule
+    \end{tabular}
+    \caption{SwitZ 的表格}
+    \label{tab:switz}
+\end{table}
+
+如表~\ref{tab:switz}所示，这是SwitZ的表格。
+
+\section{ Kylin-OIO 的表格}
     \begin{table}[h]
         \centering
-        \begin{tabular}{lcr}
-            \toprule
-            \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
-            \midrule
-            \textit{Left-aligned text} & \textit{Centered text} & \textit{Right-aligned text} \\
-            \texttt{Another left-aligned text} & \texttt{Another centered text} & \texttt{Another right-aligned text} \\
-            \bottomrule
-        \end{tabular}
-        \caption{SwitZ 的表格}
-        \label{tab:switz}
-    \end{table}
-    如表~\ref{tab:switz}所示，这是SwitZ的表格。
-    \section{ Kylin-OIO 的表格}
-    \begin{table}[h]
-        \centering
-        \begin{tabular}{l c r} 
+        \begin{tabular}{l c r}
             \toprule
           \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
           \midrule
@@ -88,6 +100,7 @@
         \caption{三线表示例}
         \label{tab:my_table}
     \end{table}
-    
+
     如\ref{tab:my_table} 所示，第三行第三列已改为代码字体。
-\end{document}  
+\end{document}
+
