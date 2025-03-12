@@ -75,15 +75,15 @@
     \end{table}
     如表~\ref{tab:switz}所示，这是SwitZ的表格。
     \section{ Kylin-OIO 的表格}
-    \begin{table}[]
+    \begin{table}[h]
         \centering
         \begin{tabular}{l c r} 
-        \hline
-          Column 1 & Column 2 & Column 3 \\
-          \hline
+            \toprule
+          \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
+          \midrule
            \textit{Left aligned text}  & \textit{Centered text} & \textit{Right aligned text} \\
            \texttt{Another left aligned text} & \texttt{Another centered text} & \texttt{Another right aligned text}\\
-           \hline
+           \bottomrule
         \end{tabular}
         \caption{三线表示例}
         \label{tab:my_table}
