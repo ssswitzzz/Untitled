@@ -2,6 +2,9 @@
 
 \usepackage{booktabs}
 \usepackage{ctex}
+\usepackage{float} % 用以支持 [H] 命令
+\usepackage{amsmath}  % 导入 amsmath 包以支持数学命令
+\usepackage{graphicx}  % 导入 graphicx 包以支持插图
 
 \author{SwitZ \and Shichien \and Kylin-OIO}
 \title{Write Anything Here}
@@ -72,7 +75,7 @@
 
 \section{ Switz 的表格}
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{lcr}
         \toprule
@@ -87,10 +90,12 @@
 \end{table}
 
 如表~\ref{tab:switz}所示，这是SwitZ的表格。
+Hollowheart
+如 \ref{tab:my_table} 所示，第三行第三列已改为代码字体。
 
 \section{ Kylin-OIO 的表格}
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{l c r}
         \toprule
@@ -104,7 +109,40 @@
     \label{tab:my_table}
 \end{table}
 
-如\ref{tab:my_table} 所示，第三行第三列已改为代码字体。
+如 \ref{tab:my_table} 所示，第三行第三列已改为代码字体。
+
+\section{数学代码}
+
+行内公式使用一个美元符号包裹，如 $a^2 + b^2 = c^2$。
+
+行间公式使用两个美元符号包裹，如
+
+$$
+    \int_{0}^{1} x^2 \, dx = \frac{1}{3}
+$$
+
+在数学公式中，使用下划线表示下标，使用脱字符表示上标，如 $a_{1}^{2}$。
+
+如果只有一个字符作为上标或下标，可以省略大括号，如 $a^2$。
+
+如果有多个字符要作为上标或者下标，需要大括号：$ \text{Deralive}_{\text{Kylin-OIO}}^{\text{Switz}} $
+
+你会发现我把文本都用 \textbackslash text\{\} 包裹起来了，是因为在美元符号的公式环境中，不用包裹的文本会被解释为数学符号。
+
+然后你会发现，Kylin-OIO 中间的这个横杠我进行了特殊处理，是因为有一些符号是不能随意打出来的，需要转义。
+例如反斜杠、百分号（因为反斜杠是LateX 中的命令前缀，百分号是 LateX 中的注释，这些特殊的符号都需要转义。
+转义的方法是在前面加上一个反斜杠，像我这样写 \%）
+
+但是反斜杠的输入方法最特别，要使用一个命令来输出这个符号：\textbackslash
+
+\LaTeX 的数学公式是有表格的，除了用 GPT 之外，还可以自己查表：
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{img/latex-math-example.jpg}
+    \caption{LateX 数学符号表}
+    \label{fig:latex-math-symbols}
+\end{figure}
 
 \end{document}
 
