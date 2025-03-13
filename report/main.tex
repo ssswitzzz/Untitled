@@ -144,4 +144,35 @@ $$
     \label{fig:latex-math-symbols}
 \end{figure}
 
+
+
+\section{SwitZ的数学公式和图片}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{img/switz_screenshot_250313_1711.png}
+    \caption{SwitZ的图片}
+    \label{fig:SwitZ-fig}
+\end{figure}
+如图\ref{fig:SwitZ-fig}所示，这是SwitZ的图片。\\
+
+下方是SwitZ的数学公式：\\
+
+
+\textbf{公式定义:} 综合考虑组件版本回退的影响，计算其成本：
+
+$$
+\text{Cost}(i) = \alpha_i \times \sum_{r_{i,j} \in R_i} \left( \alpha_j \times \frac{\Delta X_i}{X_i} (10 - |X_i - X_j|) + \alpha_j \times \frac{\Delta Y_i}{Y_i} (10 - \beta |Y_i - Y_j|) \right)
+$$
+
+其中：
+
+\begin{itemize}
+  \item $\alpha_i$: 组件 $c_{pi}$ 的权重。
+  \item $R_i$: 组件 $c_{pi}$ 的依赖集合。
+  \item $\Delta X_i = |X_i^* - X_i|$: 主版本号的差值。
+\end{itemize}
+
+
+\section{Kylin-OIO的数学公式和图片}
+
 \end{document}
