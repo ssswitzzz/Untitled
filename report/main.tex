@@ -172,5 +172,23 @@ $$
 \end{itemize}
 
 \section{Kylin-OIO的数学公式和图片}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{img/kylinoio_screenshot}
+    \caption{提交c3c4e156中在导言区添加的package}
+    \label{kylinoio_screenshot}
+\end{figure}
 
+如图\ref{kylinoio_screenshot}所示，这是Kylin-OIO的图片。
+
+\textbf{{\heiti 公式定义}}：综合考虑组件版本回退的影响，计算其成本：
+$$
+    \text{Cost}(i)=\alpha_i\times\sum_{r_{i,j\in R}}\bigg(\alpha_{j}\times\frac{\Delta x_{i}}{x_{i}}(10-|x_{i}-x_{j}|)+\alpha_{j}\times\frac{\Delta y_{i}}{y_{i}}(10-\beta |x_{i}-x_{j}|)\bigg)
+$$
+其中：
+\begin{itemize}
+\item $\alpha_{i}$:组件$cp_{i}$的权重。
+\item $R_{i}$:组件$cp_{i}$的依赖集合。
+\item $\Delta X_{i}=|X_{i}^{*}-X_{i}|$:主版本号的差值。
+\end{itemize}
 \end{document}
